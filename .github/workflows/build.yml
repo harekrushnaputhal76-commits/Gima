@@ -24,11 +24,27 @@ jobs:
           gradle-version: '8.7'
 
       - name: Build Debug APK
-        run: gradle assembleDebug
+        run: |
+          gradle assembleDebug --stacktrace 2>&1 | tee gradle-build.log
+
+      - name: Dump Failure Log to Summary
+        if: failure()
+        run: |
+          echo "### Build Failure Log" >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          tail -n 80 gradle-build.log >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+
+      - name: Upload Build Log
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gradle-build-log
+          path: gradle-build.log
 
       - name: Upload Jima APK
+        if: success()
         uses: actions/upload-artifact@v4
         with:
           name: Jima-Debug-APK
           path: app/build/outputs/apk/debug/app-debug.apk
-
