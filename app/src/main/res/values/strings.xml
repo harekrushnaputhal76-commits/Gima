@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Jima AI</string>
+    <string name="accessibility_service_label">Jima Crow Work Engine</string>
+    <string name="accessibility_service_description">Allows Jima AI to execute voice-commanded clicks, typing, and scrolling across apps when awake. Uses 0% battery when idle.</string>
+</resources>
+

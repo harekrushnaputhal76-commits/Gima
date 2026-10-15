@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="jima_bg_dark">#0D1117</color>
+    <color name="jima_card_dark">#161B22</color>
+    <color name="jima_cyan">#00F0FF</color>
+    <color name="jima_purple">#7B2CBF</color>
+    <color name="jima_pink">#FF007F</color>
+    <color name="jima_text_white">#FFFFFF</color>
+    <color name="jima_text_gray">#8B949E</color>
+</resources>
+

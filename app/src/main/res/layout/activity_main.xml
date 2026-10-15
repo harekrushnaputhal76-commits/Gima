@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/jima_bg_dark"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JIMA AI CORE"
+            android:textColor="@color/jima_cyan"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_system_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="System Status: Ready"
+            android:textColor="@color/jima_text_gray"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_gemini_api_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_pill_bar"
+            android:hint="Paste Gemini API Key Here"
+            android:inputType="textPassword"
+            android:padding="14dp"
+            android:textColor="@color/jima_text_white"
+            android:textColorHint="@color/jima_text_gray" />
+
+        <Button
+            android:id="@+id/btn_save_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Save API Key" />
+
+        <Button
+            android:id="@+id/btn_perm_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="1. Grant Floating Orb Permission" />
+
+        <Button
+            android:id="@+id/btn_perm_accessibility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="2. Enable Crow Work Accessibility" />
+
+        <Button
+            android:id="@+id/btn_perm_assistant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="3. Set Jima as Default Assistant" />
+
+        <Button
+            android:id="@+id/btn_launch_orb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Launch Jima Floating Orb Now" />
+
+    </LinearLayout>
+</ScrollView>
+

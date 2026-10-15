@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<voice-interaction-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sessionService="com.jima.ai.core.assistant.JimaVoiceInteractionSessionService"
+    android:supportsAssist="true"
+    android:supportsLaunchVoiceAssistFromKeyguard="true"
+    android:supportsLocalInteraction="true"
+    android:settingsActivity="com.jima.ai.core.assistant.MainActivity" />
+    android:settingsActivity="com.jima.ai.core.assistant.MainActivity" />
