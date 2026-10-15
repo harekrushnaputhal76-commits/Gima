@@ -5,4 +5,3 @@
     android:supportsLaunchVoiceAssistFromKeyguard="true"
     android:supportsLocalInteraction="true"
     android:settingsActivity="com.jima.ai.core.assistant.MainActivity" />
-    android:settingsActivity="com.jima.ai.core.assistant.MainActivity" />

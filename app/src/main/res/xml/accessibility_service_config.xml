@@ -8,4 +8,3 @@
     android:canRetrieveWindowContent="true"
     android:canPerformGestures="true"
     android:settingsActivity="com.jima.ai.core.assistant.MainActivity" />
-    android:settingsActivity="com.jima.ai.core.assistant.MainActivity" />
